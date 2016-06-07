@@ -16,3 +16,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+// var answers = [];
+// var $question = $('ul li input');
+
+// $question.click( function() {
+//   console.log('clicked');
+
+//   $question.push(
+// });
+
+
+
+
+
+// $( "form" ).submit(function( event ) {
+//   alert( $(this).serializeArray() );
+//   event.preventDefault();
+// });
+
+
+
+// Creating array out of qquestions
+$( "#array-form" ).submit(function( event ) {
+  
+  // Turn form into array
+  var x = $("#array-form").serializeArray();
+  event.preventDefault();
+
+
+  // Begin Logging ///////////////////////////
+    console.log(x);
+    alert(JSON.stringify(x));
+    $.each(x, function(i, field){
+      $("#results").append("<p>" + field.name + ":" + field.value + "</p>");
+    });
+  // End Logging /////////////////////////////
+});
+

@@ -22,17 +22,40 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div class="wrapper">
-  
-    <section class="header">
-      <header>
-        
-      </header>
-    </section>
 
-  </div>
-  
-  
+<form id="array-form" style="width: 50%; float: left;">
+  <h1>Which of the following is a new feature in Office 2016 for Mac?</h1>
+  <ul>
+    <li><input type="radio" name="newFeature" value="Resdesigned ribbon" />   Resdesigned ribbon</li>
+    <li><input type="radio" name="newFeature" value="Smart Lookup" />         Smart Lookup</li>
+    <li><input type="radio" name="newFeature" value="Simplified Sharing" />   Simplified Sharing</li>
+    <li><input type="radio" name="newFeature" value="All of the above" />     All of the above</li>
+  </ul>
+
+  <h1>Office 365 can be used on which of the following devices? (Select all that apply)</h1>
+  <ul>
+    <li><input type="checkbox" name="usedOnWhichDevices" value="Mac" />       Mac</li>
+    <li><input type="checkbox" name="usedOnWhichDevices" value="iPad" />      iPad</li>
+    <li><input type="checkbox" name="usedOnWhichDevices" value="iPhone" />    iPhone</li>
+    <li><input type="checkbox" name="usedOnWhichDevices" value="iPad Pro" />  iPad Pro</li>
+  </ul>
+
+  <h1>Office 365 Home is great choice for the whole family and may be installed on up to 5 Macs/PC and 5 iPads/tablets. </h1>
+  <ul>
+    <li><input type="radio" name="greatChoice" value="True" />                True</li>
+    <li><input type="radio" name="greatChoice" value="False" />               False</li>
+  </ul>
+
+  <input type="submit" />
+</form>
+
+
+<div id="results" style="font-family: monospace; border: 1px dashed #ccc; margin: 25px; padding: 15px; width: 45%; float: left;">
+  <h1>Array Dump:</h1>
+</div>
+
+
+
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
   <!-- Vendor Plug-Ins -->
