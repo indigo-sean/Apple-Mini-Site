@@ -1,0 +1,49 @@
+
+
+//
+// 3 Column summary
+//
+
+.summary {
+  @include flex-flow(row wrap);
+  margin: 60px 0;
+
+  h1 {
+    @include flex(1 0 100%);
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+
+    em {
+      color: #d83b01;
+    }
+  }
+
+  .columns {
+    @include justify-content(space-between);
+
+    &__x3 {
+      @include flex(0 1 30%);
+
+      img {
+        margin: 25px auto;
+        display: block;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 35px;
+        margin-bottom: 25px;
+        height: 75px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

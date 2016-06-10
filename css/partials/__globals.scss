@@ -9,7 +9,7 @@
 html, 
 body { 
   height: 100%; 
-  font: 17px/1.4 'Segoe UI', 'Segoe', Verdana, Arial, sans-serif;
+  font: 17px/1.4 "Segoe UI",-apple-system,BlinkMacSystemFont,"Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
 body {
@@ -17,9 +17,15 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 36px;
   margin: 25px 0 5px;
+  letter-spacing: -1px;
+  line-height: 44px;
+
+  em {
+    color: #d83b01;
+  }
 }
 
 ul {
@@ -30,3 +36,18 @@ ul {
 
 }
 
+.columns {
+  @include flexbox();
+  @include flex-flow(row nowrap);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  &__2x {
+    @include flex(1 0 auto);
+  }
+
+  &__3x {
+    @include flex(1 0 auto);
+  }
+}

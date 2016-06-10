@@ -1,0 +1,30 @@
+
+
+//
+// Hero panel
+//
+
+.hero {
+  background: url('../img/hero.png') 0 0 no-repeat #fff;
+  background-size: cover;
+  height: 700px;
+
+  // Logos in hero
+  &__logos {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 0 0 0;
+
+    @include flexbox();
+    @include flex-flow(row nowrap);
+    @include justify-content(space-between);
+
+    img {
+      width: 200px;
+      height: 75px;    
+
+      @include flex(0 1 auto);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+
+//
+// 2 Column with Video
+//
+
+.panel.video {
+  background: #d83b01;
+
+  .columns {
+
+    .video__summary {
+      @include flex(0 1 400px);
+      padding: 60px 0;
+
+      h1 {
+        color: #fff;
+        margin-right: 100px;
+      }
+    }
+
+    .video__container {
+      @include flex(1 0 auto);
+      background: #fff;
+      position: relative;
+
+
+    }
+  }
+}

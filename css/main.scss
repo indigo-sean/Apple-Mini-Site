@@ -1,8 +1,20 @@
 // Mixins
 @import "partials/__reset.scss";          // Boilerplate globals
 @import "partials/__mixins.scss";         // SASS Mixins
+@import "partials/__fonts.scss";         // SASS Mixins
 
 // Globals
 @import "partials/__globals";             // Sitewide Globals.
 
-// Individual Pages
+// Individual Sections
+@import "partials/__hero";                // Hero 
+@import "partials/__intro";               // Intro
+@import "partials/__blurbs";               // Blurbs
+@import "partials/__summary";               // Summary
+@import "partials/__video";               // Video panel
+@import "partials/__features";               // 5 new features
+@import "partials/__devices";               // Splash showing multiple devices
+@import "partials/__skuchooser";               // SKU Choose tool
+@import "partials/__quiz";               // The big quiz section
+
+
