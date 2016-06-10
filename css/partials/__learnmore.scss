@@ -1,0 +1,43 @@
+//
+// Learn more panel
+//
+
+.learnmore {
+  background: #d83b01;
+
+  .columns {
+
+    .learnmore__text {
+      @include flex(0 1 400px);
+      padding: 60px 0 60px 60px;
+      background: #fff;
+
+      h1 {
+        color: #222;
+        margin-right: 100px;
+        margin-bottom: 40px;
+
+      }
+
+      p {
+
+
+        a {
+          text-decoration: none;
+          color: #d83b01;
+        }
+      }
+    }
+
+    .learnmore__img {
+      @include flex(1 0 auto);
+      position: relative;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 25%;
+      }
+    }
+  }
+}

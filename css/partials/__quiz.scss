@@ -106,6 +106,15 @@
           padding: 7px;
         }
 
+        input[type="checkbox"] {
+          width: auto;
+          display: inline;
+        }
+
+        button {
+          display: block;
+        }
+
       }
 
       .quiz__answer--content-img {
