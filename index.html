@@ -437,76 +437,86 @@
       <h1>Answer the following questions to earn your 1-year Office 365 Home promo code.</h1>
     </div>
 
-    <div class="quiz__question quiz__question-1">
-      <div class="quiz__question--content">
-        <p class="number">1</p>
+    <form id="question-form">
+      <div class="quiz__question quiz__question-1">
+        <div class="quiz__question--content">
+          <p class="number">1</p>
 
-        <div>
-          <p class="question">Which of the following is a new feature in Office 2016 for Mac?</p>
-          <ul>
-            <li><input type="radio" name="newFeature" value="Resdesigned ribbon" />   Resdesigned ribbon</li>
-            <li><input type="radio" name="newFeature" value="Smart Lookup" />         Smart Lookup</li>
-            <li><input type="radio" name="newFeature" value="Simplified Sharing" />   Simplified Sharing</li>
-            <li><input type="radio" name="newFeature" value="All of the above" />     All of the above</li>
-          </ul>
+          <div class="quiz__question--content">
+            <p class="question">Which of the following is a new feature in Office 2016 for Mac?</p>
+            <ul>
+              <li><input type="radio" name="newFeature" value="Resdesigned ribbon" />   Resdesigned ribbon</li>
+              <li><input type="radio" name="newFeature" value="Smart Lookup" />         Smart Lookup</li>
+              <li><input type="radio" name="newFeature" value="Simplified Sharing" />   Simplified Sharing</li>
+              <li><input type="radio" name="newFeature" value="All of the above" />     All of the above</li>
+            </ul>
 
-          <button>Submit</button>
-          <span>Submit to check the answer</span>
+            <div class="question__submit--container">
+              <button class="question__submit question__submit--1">Submit</button>
+              <span>Submit to check the answer</span>
+            </div>
+
+            
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="quiz__question quiz__question-2">
-      <div class="quiz__question--content">
-        <p class="number">2</p>
+      <div class="quiz__question quiz__question-2">
+        <div class="quiz__question--content">
+          <p class="number">2</p>
 
-        <div>
-          <p class="question">Which of the following is a new feature in Office 2016 for Mac?</p>
-          <ul>
-            <li><input type="radio" name="newFeature" value="Resdesigned ribbon" />   Resdesigned ribbon</li>
-            <li><input type="radio" name="newFeature" value="Smart Lookup" />         Smart Lookup</li>
-            <li><input type="radio" name="newFeature" value="Simplified Sharing" />   Simplified Sharing</li>
-            <li><input type="radio" name="newFeature" value="All of the above" />     All of the above</li>
-          </ul>
+          <div class="quiz__question--content">
+            <p class="question">Which of the following is a new feature in Office 2016 for Mac?</p>
+            <ul>
+              <li><input type="checkbox" name="usedOnWhichDevices" value="Mac" />       Mac</li>
+              <li><input type="checkbox" name="usedOnWhichDevices" value="iPad" />      iPad</li>
+              <li><input type="checkbox" name="usedOnWhichDevices" value="iPhone" />    iPhone</li>
+              <li><input type="checkbox" name="usedOnWhichDevices" value="iPad Pro" />  iPad Pro</li>
+            </ul>
 
-          <button>Submit</button>
-          <span>Submit to check the answer</span>
+            <div class="question__submit--container">
+              <button class="question__submit question__submit--2">Submit</button>
+              <span>Submit to check the answer</span>
+            </div>
+
+            <div clas="quiz__question--answer">Answer</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="quiz__question quiz__question-3">
-      <div class="quiz__question--content">
-        <p class="number">3</p>
+      <div class="quiz__question quiz__question-3">
+        <div class="quiz__question--content">
+          <p class="number">3</p>
 
-        <div>
-          <p class="question">Which of the following is a new feature in Office 2016 for Mac?</p>
-          <ul>
-            <li><input type="radio" name="newFeature" value="Resdesigned ribbon" />   Resdesigned ribbon</li>
-            <li><input type="radio" name="newFeature" value="Smart Lookup" />         Smart Lookup</li>
-            <li><input type="radio" name="newFeature" value="Simplified Sharing" />   Simplified Sharing</li>
-            <li><input type="radio" name="newFeature" value="All of the above" />     All of the above</li>
-          </ul>
+          <div class="quiz__question--content">
+            <p class="question">Office 365 can be used on which of the following devices? (Select all that apply)</p>
+            <ul>
+              <li><input type="radio" name="greatChoice" value="True" />                True</li>
+              <li><input type="radio" name="greatChoice" value="False" />               False</li>
+            </ul>
 
-          <button>Submit</button>
-          <span>Submit to check the answer</span>
+            <div class="question__submit--container">
+              <button class="question__submit question__submit--3">Submit</button>
+              <span>Submit to check the answer</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
 
-    <div class="quiz__answer">
+    <div class="quiz__answer quiz__question">
       <div class="quiz__answer--statement">
-        <h1>You’re almost done! Just fill out the form below and click <em>Submit</em></h1>
+        <h1>Office 365 Home is great choice for the whole family and may be installed on up to 5 Macs/PC and 5 iPads/tablets.  <em>Submit</em></h1>
       </div>
       <div class="quiz__answer--content columns">
         <div class="quiz__answer--content-form columns__2x">
           <h1>Personal Information</h1>
-          <form>
-            <input placeholder="Test" />
-            <input placeholder="Test" />
-            <input placeholder="Test" />
-            <input placeholder="Test" />
-            <input placeholder="Test" />
+          <form id="contact-form">
+            <input placeholder="First name" />
+            <input placeholder="Last name" />
+            <input placeholder="Email address" />
+            <input placeholder="Company" />
+            <input placeholder="Store number" />
             <input type="checkbox" name="promotions" />
             <label for="promotions">Yes, I would like to receive more Microsoft Promotions</label>
 
@@ -517,6 +527,9 @@
         <div class="quiz__answer--content-img columns__2x">
           <img src="img/quiz__box.jpg" alt="Office 365" />
         </div>
+
+        <!-- Temporary results dump -->
+        <div id="results"></div>
       </div>
     </div>
   </section>
@@ -545,7 +558,7 @@
 
   <footer>
     <div class="footer">
-      <img src="img/hero__logos--microsoft.svg" alt="Microsoft" />
+      <img src="img/hero__logos--microsoft-dark.svg" alt="Microsoft" />
       <p>Footer copy</p>
     </div>
   </footer>
