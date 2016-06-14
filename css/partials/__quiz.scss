@@ -24,7 +24,7 @@
     height: 600px;
 
     .quiz__question--content {
-      width: 100%;
+      width: auto;
       max-width: 1100px;
       margin: 0 auto;
       position: relative;
@@ -135,6 +135,9 @@
           padding: 10px 70px;
           margin-top: 25px;
         }
+
+
+
 
       }
 

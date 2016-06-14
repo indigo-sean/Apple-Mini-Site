@@ -3,13 +3,13 @@
 //
 
 .learnmore {
-  background: #d83b01;
+  background: url("../img/panel__background.svg") 150px 0 repeat-y #fff;
 
   .columns {
 
     .learnmore__text {
       @include flex(0 1 400px);
-      padding: 60px 0 60px 60px;
+      padding: 60px 0 60px 0px;
       background: #fff;
 
       h1 {
