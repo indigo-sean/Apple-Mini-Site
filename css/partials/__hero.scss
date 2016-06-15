@@ -10,6 +10,11 @@
   background-position: center top;
   height: 700px;
 
+  @include respond-to(mobile) {
+    background-position: center top;
+    height: 240px;
+  }
+
   // Logos in hero
   &__logos {
     width: 100%;

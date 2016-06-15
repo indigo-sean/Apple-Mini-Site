@@ -57,30 +57,30 @@ $(document).on("click", ".products-mac", function () {
     final.contact = $('#contact-form').serializeObject();;
     // Begin Logging ///////////////////////////
       console.log(final);
-      alert(JSON.stringify(final));
+      console.log( (JSON.stringify(final) ));
 
       // Example dump to #results panel
-      $('#results').append('var toAPI = {');
-      for (key in final) {
-        if (key === 'guid') {
-          $('#results').append('<p>&nbsp;&nbsp;guid: ' + final.guid + ',</p>');
-        } else {
-          $('#results').append('<strong>&nbsp;&nbsp;' + key + ': {</strong>');
-          for (obj in final[key]) {
-            if (obj === 'greatChoice' || obj === 'promotions') {
-              $('#results').append('<p>&nbsp;&nbsp;&nbsp;&nbsp;' + obj + ': ' + final[key][obj] + '</p>');  
-            } else {
-              $('#results').append('<p>&nbsp;&nbsp;&nbsp;&nbsp;' + obj + ': ' + final[key][obj] + ',</p>');
-            }
-          }
-          if (key === 'contact') {
-            $('#results').append('&nbsp;&nbsp;} <br />');  
-          } else {
-            $('#results').append('&nbsp;&nbsp;}, <br />');
-          }
-        }
-      }
-      $('#results').append('}');
+      // $('#results').append('var toAPI = {');
+      // for (key in final) {
+      //   if (key === 'guid') {
+      //     $('#results').append('<p>&nbsp;&nbsp;guid: ' + final.guid + ',</p>');
+      //   } else {
+      //     $('#results').append('<strong>&nbsp;&nbsp;' + key + ': {</strong>');
+      //     for (obj in final[key]) {
+      //       if (obj === 'greatChoice' || obj === 'promotions') {
+      //         $('#results').append('<p>&nbsp;&nbsp;&nbsp;&nbsp;' + obj + ': ' + final[key][obj] + '</p>');  
+      //       } else {
+      //         $('#results').append('<p>&nbsp;&nbsp;&nbsp;&nbsp;' + obj + ': ' + final[key][obj] + ',</p>');
+      //       }
+      //     }
+      //     if (key === 'contact') {
+      //       $('#results').append('&nbsp;&nbsp;} <br />');  
+      //     } else {
+      //       $('#results').append('&nbsp;&nbsp;}, <br />');
+      //     }
+      //   }
+      // }
+      // $('#results').append('}');
       // $.each(final, function (i, field) {
       //   $('#results').append('<p>' + field + '</p>');
       // });
