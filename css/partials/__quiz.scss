@@ -75,6 +75,10 @@
           display: block;
           font-size: 14px;  
         }
+
+        .quiz__question--answer {
+          display: none;
+        }
       }
     }
 
@@ -92,6 +96,7 @@
     &.quiz__question-3 {
       background: #f2f2f2;
     }
+
   }
 
   &__answer {
@@ -139,6 +144,11 @@
 
 
 
+      }
+      
+      .quiz__answer--form-complete {
+        display: none;
+        width: 50%;
       }
 
       .quiz__answer--content-img {
