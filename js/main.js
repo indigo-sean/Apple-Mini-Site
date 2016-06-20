@@ -15,10 +15,6 @@ $(document).on("click", ".products-mac", function () {
 
 
 
-
-
-
-
 // Question Capture //////////////////////////////////////////////////////////////////
 
   function guid () {
@@ -50,6 +46,8 @@ $(document).on("click", ".products-mac", function () {
   $("#contact-form").submit(function(event) {
     event.preventDefault();
     
+    $('.quiz__answer--content-form').hide();
+    $('.quiz__answer--form-complete').show();
     // Turn form into array
     var final = {};
     final.guid = guid();
@@ -109,11 +107,9 @@ $(document).on("click", ".products-mac", function () {
 
 
 
-
 // Counting the questions
 var totalQuestions = $('.quiz__question').size();
 var currentQuestion = 0;
-
 
 $questions = $('.quiz__question');
 $questions.hide();
@@ -131,6 +127,7 @@ $('.question__submit').click(function () {
   event.preventDefault();
   $(this).parent(".question__submit--container").hide();
   $(".question__submit--container button").css("opacity", ".2").prop("disabled", true);
+  $('#answer--' + (currentQuestion + 1)).css("display", "block");
 
   // Add +1 per question
   $($questions.get(currentQuestion)).show(function () {
